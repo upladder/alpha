@@ -1,13 +1,13 @@
 {
-  "name": "loginapp",
+  "name": "Upladder",
   "version": "1.0.0",
-  "description": "Simple authentication system",
+  "description": "Jobportal web application",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Brad Traversy",
+  "author": "Sasi Rekha",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "*",
