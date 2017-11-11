@@ -1,0 +1,122 @@
+	<div id="page-content">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 page-content">
+
+					<div class="white-container sign-up-form">
+						<div>
+							<h2 class="text-center">Register</h2>
+						</div>
+
+						<hr class="mt60">
+
+            {{#if errors}}
+                  {{#each errors}}
+                    <div class="alert alert-danger">{{msg}}</div>
+                  {{/each}}
+            {{/if}}
+						<!-- Registration form(START) -->
+						<form form method="post" action="/users/register">
+							<div class="row">
+								<div class="col-lg-3 col-md-2 col-sm-1"></div>
+									<div class="col-lg-6 col-md-8 col-sm-10 col-xs-12">
+										<div><lable>Who are you?</lable></div>
+										<div class="form-group">
+											<label class="radio-inline">
+												<input type="radio" name="usertype" id="jobseeker" value="job-seeker"> Job Seeker
+											</label>
+											<label class="radio-inline">
+												<input type="radio" name="usertype" id="intern" value="internship-seeker"> Internship Seeker
+											</label>
+											<label class="radio-inline">
+												<input type="radio" name="usertype" id="recruiter" value="recruiter"> Recruiter
+											</label>
+										</div>
+										<div class="form-group">
+											<input type="text" class="form-control" id="firstName" name="fname" placeholder="Please enter your first name">
+										</div>
+										<div class="form-group">
+												<input type="text" class="form-control" id="lastName" name="lname" placeholder="Please enter your last name">
+										</div>
+                    <div class="form-group">
+												<input type="text" class="form-control" id="username" name="username" placeholder="Please enter Username">
+										</div>
+
+										<div class="form-group  has-feedback">
+												<div class="input-group">
+													<span class="input-group-addon"><i class="fa fa-phone"></i></span>
+													<input type="text" class="form-control" id="mbno" name="mbno" placeholder="Enter your mobile number" aria-describedby="phoneStatus">
+												</div>
+												<span class="glyphicon glyphicon-ok form-control-feedback" style="display:none;" aria-hidden="true"></span>
+												<span id="phoneStatus" class="sr-only">(success)</span>
+										</div>
+
+										<div class="form-group  has-feedback">
+											
+											<div class="input-group">
+												<span class="input-group-addon"><i class="fa fa-envelope-o"></i></span>
+												<input type="text" class="form-control" id="email" name="email" placeholder="Enter your Email id" aria-describedby="emailStatus">
+											</div>
+											<span class="glyphicon glyphicon-ok form-control-feedback" style="display:none;" aria-hidden="true"></span>
+											<span id="emailStatus" class="sr-only">(success)</span>
+										</div>
+                    <div class="form-group  has-feedback">
+											
+											<div class="input-group">
+												<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+												<input type="password" class="form-control" name="password" id="password" placeholder="Enter Password" aria-describedby="passStatus">
+											</div>
+											<span class="glyphicon glyphicon-ok form-control-feedback" style="display:none;" aria-hidden="true"></span>
+											<span id="passStatus" class="sr-only">(success)</span>
+										</div>
+                     <div class="form-group  has-feedback">
+											
+											<div class="input-group">
+												<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+												<input type="password" class="form-control" name="repassword" id="repassword" placeholder="Re-enter Password" aria-describedby="re-passStatus">
+											</div>
+											<span class="glyphicon glyphicon-ok form-control-feedback" style="display:none;" aria-hidden="true"></span>
+											<span id="re-passStatus" class="sr-only">(success)</span>
+										</div>
+										
+
+										<div class="clearfix">
+                      <button type="submit" class="btn btn-default btn-large pull-right">Register</button>
+										</div>
+									</div>
+								</div>
+							<div class="col-lg-3 col-md-2 col-sm-1"></div>
+						</form>
+						<!-- Registration form(END) -->						
+					</div>
+				</div> <!-- end .page-content -->
+			</div>
+		</div> <!-- end .container -->
+	</div> <!-- end #page-content -->
+
+
+<!--
+<form method="post" action="/users/register">
+   <div class="form-group">
+    <label>Name</label>
+    <input type="text" class="form-control" placeholder="Name" name="name">
+  </div>
+  <div class="form-group">
+    <label>Username</label>
+    <input type="text" class="form-control" placeholder="Username" name="username">
+  </div>
+   <div class="form-group">
+    <label>Email</label>
+    <input type="email" class="form-control" placeholder="Email" name="email">
+  </div>
+  <div class="form-group">
+    <label>Password</label>
+    <input type="password" class="form-control" placeholder="Password" name="password">
+  </div>
+  <div class="form-group">
+    <label>Confirm Password</label>
+    <input type="password" class="form-control" placeholder="Password" name="password2">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+-->

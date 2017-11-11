@@ -1,0 +1,75 @@
+
+	<div id="page-content">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 page-content">
+
+					<div class="white-container sign-up-form">
+						<div>
+							<h2 class="text-center">Login</h2>
+						</div>
+
+						<hr class="mt60">
+						<!-- Registration form(START) -->
+						<form method="post" action="/users/login">
+							<div class="row">
+								<div class="col-lg-3 col-md-2 col-sm-1"></div>
+									<div class="col-lg-6 col-md-8 col-sm-10 col-xs-12">
+										<div><lable>Who are you?</lable></div>
+										<div class="form-group">
+											<label class="radio-inline">
+												<input type="radio" name="usertype" id="jobseeker" value="job-seeker"> Job Seeker
+											</label>
+											<label class="radio-inline">
+												<input type="radio" name="usertype" id="intern" value="internship-seeker"> Internship Seeker
+											</label>
+											<label class="radio-inline">
+												<input type="radio" name="usertype" id="recruiter" value="recruiter"> Recruiter
+											</label>
+										</div>
+									
+
+
+									 <div class="form-group">
+												<input type="text" class="form-control" id="username" name="username" placeholder="Please enter Username">
+										</div>
+
+                    <div class="form-group  has-feedback">
+											
+											<div class="input-group">
+												<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+												<input type="password" class="form-control" name="password" id="password" placeholder="Enter your Password" aria-describedby="passStatus">
+											</div>
+											<span class="glyphicon glyphicon-ok form-control-feedback" style="display:none;" aria-hidden="true"></span>
+											<span id="passStatus" class="sr-only">(success)</span>
+										</div>
+										
+
+										<div class="clearfix">
+                      <button type="submit" class="btn btn-default btn-large pull-right">Login</button>
+										</div>
+									</div>
+								</div>
+							<div class="col-lg-3 col-md-2 col-sm-1"></div>
+						</form>
+						<!-- Registration form(END) -->						
+					</div>
+				</div> <!-- end .page-content -->
+			</div>
+		</div> <!-- end .container -->
+	</div> <!-- end #page-content -->
+
+<!--
+<h2 class="page-header">Account Login</h2>
+<form method="post" action="/users/login">
+  <div class="form-group">
+    <label>Username</label>
+    <input type="text" class="form-control" name="username" placeholder="Username">
+  </div>
+  <div class="form-group">
+    <label>Password</label>
+    <input type="password" class="form-control" name="password" placeholder="Password">
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
+-->
